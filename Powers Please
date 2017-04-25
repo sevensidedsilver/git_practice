@@ -1,0 +1,16 @@
+//a function which returns a list of all powers of 2 from 0 to n (where n is an exponent)
+//i feel like this has a lot of fat…
+
+function powersOfTwo(n){
+  var numbers = [];
+  for (var i = 0; i < n + 1; ++i) {
+    numbers.push(i);
+  }
+  var results = []
+  for (var j = 0; j < numbers.length; ++j) {
+    results.push(Math.pow(2, numbers[j]));
+  
+  }
+  
+  return results;
+}
