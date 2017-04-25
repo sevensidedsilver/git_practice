@@ -1,0 +1,12 @@
+//if the last character is “!” , remove it from the string
+
+function remove(s){
+  var n = s.length;
+  if (s.charAt(n-1) == "!") {
+  
+   s = s.substring(0, s.length - 1);
+  
+  }
+  
+  return s;
+}
