@@ -1,0 +1,14 @@
+//a function that returns the length of the shortest word in a string of words
+
+function findShort(s){
+
+//breaks the string into individual words
+  s = s.split(" ");
+
+
+//sorts the array ascending by length and returns the first one  
+  s.sort(function(a,b){
+    return a.length - b.length;
+  });
+  return s[0].length;
+}
