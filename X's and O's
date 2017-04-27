@@ -1,0 +1,25 @@
+//given a string of characters, return true if it contains an equal number of x’s and o’s
+
+
+function XO(str) {
+    str = str.toUpperCase();
+    str = str.split("");
+    var x_count = 0;
+    var o_count = 0;
+    
+    for (var i = 0; i < str.length + 1; ++i){
+      if (str[i] === 'X') {
+        ++x_count;
+      } 
+      if (str [i] === 'O') {
+        ++o_count;
+      }
+    }
+    
+    if (x_count === o_count) {
+      return true;
+    } else {
+      return false;
+      }
+    
+}
