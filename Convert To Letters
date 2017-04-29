@@ -1,0 +1,21 @@
+// another codewars solution, this algo converts a string to a series of mapped numbers
+// a = 1, b= 2 and so on
+
+
+function alphabetPosition(text) {
+  text = text.toLowerCase();
+  var arr = text.split('');
+  var fin = [];
+  var letter = /^[a-z]+$/;  
+  for (var i = 0; i < arr.length; ++i) {
+    if (arr[i].match(letter)) {
+      fin.push(arr[i]);
+    }
+  }
+  var end = [];
+  for (var j = 0; j < fin.length; ++j) {
+    end.push(fin[j].charCodeAt(0) - 96);
+  }
+  end = end.join(" ");
+  return end;
+}
